@@ -88,7 +88,7 @@ class _ProcessScreenState extends State<ProcessScreen> {
               ],
             ),
             const SizedBox(
-              height: 20,
+              height: 10,
             ),
             if (currentSecond != randomNumber)
               Padding(
@@ -166,7 +166,7 @@ class _ProcessScreenState extends State<ProcessScreen> {
               onComplete: () {
                 attempts++;
                 _countDownController.restart();
-                //setState(() {});
+                setState(() {});
               },
               autoStart: true,
             ),
